@@ -21,3 +21,9 @@ prevBtn.addEventListener('click', () => {
   counter = (counter - 1 + images.length) % images.length;
   showSlide();
 });
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
